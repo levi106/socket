@@ -72,6 +72,8 @@ int main(int argc, char** argv)
 	}
 
 	printf("Bytes Sent: %d\n", iResult);
+	printf("Press enter to shutdown\n");
+	getchar();
 
 	iResult = shutdown(ConnectSocket, SD_SEND);
 	if (iResult == SOCKET_ERROR) {
